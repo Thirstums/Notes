@@ -1,4 +1,4 @@
----
+
 [<- Back to Start](https://github.com/Thirstums/Notes/blob/main/README.md)
 # My Powershell Setup Guide
 
@@ -192,6 +192,19 @@ function which ($command) {
         }
       ],
       "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#F4B8E4",
+          "style": "plain",
+          "template": " ~ ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
     }
   ],
   "final_space": true,
@@ -265,7 +278,7 @@ exit Neovim
 ```powershell
 :qa!
 ```
----
+
 
 ### setup New Pwsh Profile
 
@@ -310,12 +323,36 @@ Install-Module posh-git -Scope CurrentUser -Force
 scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
 ```
 
+Preview template themes
+
+```powershell
+Get-PoshThemes
+```
+
+Add a Theme (your own or a template)
+
+```powershell
+oh-my-posh init pwsh --config yourPrompt.omp.json | Invoke-Expression
+```
+
+Install nerd font with oh my posh (Optional)
+
+```powershell
+oh-my-posh font install
+```
+
 ## Install Terminal Icons
+
+In order for Terminal Icons to work you need to install a Nerd font
+
+- [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
+- [NerdFonts](https://www.nerdfonts.com/)
+
 ```powershell
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 ```
 
-Add this Import to your Powershell file
+Add this Import to your Powershell Profile
 ```Powershell
 Import-Module Terminal-Icons
 ```

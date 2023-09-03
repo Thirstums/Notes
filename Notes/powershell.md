@@ -1,11 +1,4 @@
 ---
-title: Powershell Setup
-description: A guide for my Powershell SetUp
-sidebar_position: 3
-authors: Thirsty
----
-
----
 [<- Back to Start](README.md)
 # My Powershell Setup Guide
 

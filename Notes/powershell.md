@@ -293,7 +293,7 @@ cd .config\powershell
 
 create & edit new Pwsh Profile
 ```powershell
-vim .\user_profile.ps1
+vim .config\powershell\user_profile.ps1
 ```
 
 #### Change powershell profile location (*redirect in default profile file*)

@@ -12,4 +12,4 @@
 </span>
 
 - [Powershell](https://github.com/Thirstums/Notes/blob/main/Notes/powershell.md)
-- [NextJS](nextjs.md)
+- [NextJS](https://github.com/Thirstums/Notes/blob/main/Notes/nextjs.md)

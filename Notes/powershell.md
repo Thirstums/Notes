@@ -7,7 +7,7 @@
 ## Preview
 </span>
 
-![Powershell](/img/Powershell_Preview.png)
+![Powershell](https://github.com/Thirstums/Notes/blob/main/Img/Powershell_Preview.png)
 
 ![Powershell vim](/img/Powershell_vim_preview.png)
 

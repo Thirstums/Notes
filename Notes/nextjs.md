@@ -1,6 +1,6 @@
 
 -------------
-[<- Back to Start](README.md)
+[<- Back to Start](https://github.com/Thirstums/Notes/blob/main/README.md)
 > #### Info:
 >*This is my Personal documentation for Nextjs*.
 >

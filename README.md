@@ -11,5 +11,5 @@
 
 </span>
 
-- [Powershell](\notes\powershell.md)
-- [NextJS](\notes\nextjs.md)
+- [Powershell](\powershell.md)
+- [NextJS](\nextjs.md)

@@ -11,5 +11,5 @@
 
 </span>
 
-- [Powershell](powershell.md)
+- [Powershell](https://github.com/Thirstums/Notes/blob/main/Notes/powershell.md)
 - [NextJS](nextjs.md)

@@ -9,7 +9,7 @@
 
 ![Powershell](https://github.com/Thirstums/Notes/blob/main/Img/Powershell_Preview.png)
 
-![Powershell vim](/img/Powershell_vim_preview.png)
+![Powershell vim](https://github.com/Thirstums/Notes/blob/main/Img/Powershell_vim_preview.png)
 
 
 <span style="color:#BABBF1"> 

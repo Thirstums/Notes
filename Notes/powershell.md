@@ -5,23 +5,28 @@ sidebar_position: 3
 authors: Thirsty
 ---
 
+---
+[<- Back to Start](..\README.md)
 # My Powershell Setup Guide
 
-```html
-<span style="color:pink">
-</span>
-```
+<span style="color:#F4B8E4">
 
 ## Preview
-
+</span>
 
 ![Powershell](/img/Powershell_Preview.png)
 
 ![Powershell vim](/img/Powershell_vim_preview.png)
 
 
+<span style="color:#BABBF1"> 
 
 ## Current Powershell Profile
+</span>
+
+<details>
+  <summary>Open</summary>
+  
 ```powershell
 # Icons
 Import-Module -Name Terminal-Icons
@@ -47,14 +52,49 @@ $PROMPT_CONFIG = Join-Path (Get-ScriptDirectory) 'thirstums.omp.json'
 oh-my-posh init pwsh --config $PROMPT_CONFIG | Invoke-Expression
 
 
+# Shutdown options
+
+# Shutdown
+function sd {
+  shutdown /s
+}
+
+# Restart
+function rs {
+  shutdown /r
+}
+
 # Open Applications
+
+# Open Discord
 function discord {
    Start-Process 'C:\Users\janis\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk'
 }
 
+# Open Microsoft Edge
 function edge {
-    Start-Process 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk'
-	}
+   Start-Process 'C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Microsoft Edge.lnk'
+}
+
+#Open File Expolorer (current location)
+function e {
+   ii .
+}
+
+# Open Taskmanager 
+function tm {
+   taskmgr
+}
+
+#Kill Tasks
+
+function kDiscord {
+   taskkill /IM Discord.exe /F
+}
+
+function kCode {
+   taskkill /IM Code.exe /F
+}
 
 # Alias
 Set-Alias vim nvim
@@ -69,8 +109,18 @@ function which ($command) {
   Get-Command -Name $command -ErrorAction SilentlyContinue |
     Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
 }
+
 ```
+
+</details>
+
+<span style="color:#8CAAEE"> 
+
 ## Current oh-my-posh Theme
+</span>
+
+<details>
+  <summary>Open</summary>
 
 ```json
 {
@@ -155,6 +205,9 @@ function which ($command) {
   "version": 2
 }
 ```
+
+</details>
+
 ## Powershell Theme
 ### Enable Acrylic material in Powershell appearence settings:
 

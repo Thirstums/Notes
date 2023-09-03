@@ -5,7 +5,7 @@ sidebar_position: 2
 authors: Thirsty
 ---
 -------------
-
+[<- Back to Start](..\README.md)
 > #### Info:
 >*This is my Personal documentation for Nextjs*.
 >

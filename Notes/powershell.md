@@ -204,7 +204,7 @@ function which ($command) {
 ## Powershell Theme
 ### Enable Acrylic material in Powershell appearence settings:
 
-![Acrylic Material](/img/PowershellEnableAcrylicMaterial.png)
+![Acrylic Material](https://github.com/Thirstums/Notes/blob/main/Img/PowershellEnableAcrylicMaterial.png)
 
 
 Open Json file and add this theme belove the Vintage theme:

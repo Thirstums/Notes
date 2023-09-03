@@ -1,5 +1,5 @@
 ---
-[<- Back to Start](README.md)
+[<- Back to Start](..\README.md)
 # My Powershell Setup Guide
 
 <span style="color:#F4B8E4">

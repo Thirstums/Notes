@@ -1,5 +1,5 @@
 ---
-[<- Back to Start](https://github.com/Thirstums/Notes/edit/main/Notes/powershell.md)
+[https://github.com/Thirstums/Notes/edit/main/Notes/powershell.md](https://github.com/Thirstums/Notes/blob/main/README.md)
 # My Powershell Setup Guide
 
 <span style="color:#F4B8E4">

@@ -402,6 +402,12 @@ Install-Module -Name PSFzf -Scope CurrentUser -Force
 winget install Microsoft.PowerToys --source winget
 ```
 
+## Install Rainmeter
+
+```
+winget install Rainmeter
+```
+
 # Powershell useful commands
 
 Kills any running Process

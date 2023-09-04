@@ -396,7 +396,11 @@ scoop install fzf
 Install-Module -Name PSFzf -Scope CurrentUser -Force
 ```
 
-
+## Install Powertoys
+- [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/install)
+```
+winget install Microsoft.PowerToys --source winget
+```
 
 # Powershell useful commands
 

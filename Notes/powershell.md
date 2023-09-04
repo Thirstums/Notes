@@ -404,6 +404,7 @@ winget install Microsoft.PowerToys --source winget
 
 ## Install Rainmeter
 
+- [Rainmeter](https://docs.rainmeter.net/manual/installing-rainmeter/)
 ```
 winget install Rainmeter
 ```

@@ -214,8 +214,16 @@ function which ($command) {
 
 </details>
 
+## Terminal install win 10/11
+- [Terminal](https://github.com/microsoft/terminal)
+
+```powershell
+winget install --id Microsoft.WindowsTerminal -e
+```
+
+
 ## Powershell Theme
-### Enable Acrylic material in Powershell appearence settings:
+### Enable Acrylic material in Terminal appearence settings:
 
 ![Acrylic Material](https://github.com/Thirstums/Notes/blob/main/Img/PowershellEnableAcrylicMaterial.png)
 
@@ -293,7 +301,7 @@ cd .config\powershell
 
 create & edit new Pwsh Profile
 ```powershell
-vim .\user_profile.ps1
+vim .config\powershell\user_profile.ps1
 ```
 
 #### Change powershell profile location (*redirect in default profile file*)
@@ -396,7 +404,18 @@ scoop install fzf
 Install-Module -Name PSFzf -Scope CurrentUser -Force
 ```
 
+## Install Powertoys
+- [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/install)
+```
+winget install Microsoft.PowerToys --source winget
+```
 
+## Install Rainmeter
+
+- [Rainmeter](https://docs.rainmeter.net/manual/installing-rainmeter/)
+```
+winget install Rainmeter
+```
 
 # Powershell useful commands
 

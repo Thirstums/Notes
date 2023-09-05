@@ -214,8 +214,16 @@ function which ($command) {
 
 </details>
 
+## Terminal install win 10/11
+- [Terminal](https://github.com/microsoft/terminal)
+
+```powershell
+winget install --id Microsoft.WindowsTerminal -e
+```
+
+
 ## Powershell Theme
-### Enable Acrylic material in Powershell appearence settings:
+### Enable Acrylic material in Terminal appearence settings:
 
 ![Acrylic Material](https://github.com/Thirstums/Notes/blob/main/Img/PowershellEnableAcrylicMaterial.png)
 

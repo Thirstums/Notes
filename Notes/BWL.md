@@ -9,8 +9,11 @@
 direkte Kosten, welche direkt (exclusiv) einem Kostenträger (Produktgruppe) zugerechnet werden könen
 
 
-- Warenkosten / Materialkosten -> EK
-- Personalkosten (lohn) -> EK
+- Warenkosten / Materialkosten -> EK (GK)
+- Personalkosten (lohn) -> EK (GK)
+
+Materialeinzelkosten wenn -> EK
+Personaleinzelkosten wenn -> EK
 
 Andere Arten von Einzekosten gibts nicht
 

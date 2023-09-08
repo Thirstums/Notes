@@ -214,6 +214,15 @@ function which ($command) {
 
 </details>
 
+
+## Powershell 7 install 
+
+- [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+
+```powershell
+winget search Microsoft.PowerShell
+```
+
 ## Terminal install win 10/11
 - [Terminal](https://github.com/microsoft/terminal)
 

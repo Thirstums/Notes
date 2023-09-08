@@ -217,14 +217,14 @@ function which ($command) {
 
 ## Powershell 7 install 
 
-- [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+> - [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
 
 ```powershell
 winget search Microsoft.PowerShell
 ```
 
 ## Terminal install win 10/11
-- [Terminal](https://github.com/microsoft/terminal)
+> - [Terminal](https://github.com/microsoft/terminal)
 
 ```powershell
 winget install --id Microsoft.WindowsTerminal -e
@@ -267,14 +267,14 @@ Open Json file and add this theme belove the Vintage theme:
 
 ## Scoop installation
 
-[Scoop](https://scoop.sh/)
+> - [Scoop](https://scoop.sh/)
 
 ```Powershell
 iwr -useb get.scoop.sh | iex
 ```
 ## Git for windows Installation
 
-[Git For Windows](https://gitforwindows.org/)
+> - [Git For Windows](https://gitforwindows.org/)
 
 ```Powershell
 winget install -e --id Git.Git
@@ -282,7 +282,7 @@ winget install -e --id Git.Git
 
 ## Install Neovim
 
-[Neovim](https://neovim.io/)
+> - [Neovim](https://neovim.io/)
 
 ```Powershell
 scoop install neovim gcc
@@ -330,7 +330,7 @@ $env:USERPROFILE\.config\powershell\user_profile.ps1
 
 ## Oh my Posh Installation
 
-[OhMyPosh](https://ohmyposh.dev/docs/installation/windows)
+> - [OhMyPosh](https://ohmyposh.dev/docs/installation/windows)
 
 ```powershell
 Install-Module posh-git -Scope CurrentUser -Force
@@ -362,8 +362,8 @@ oh-my-posh font install
 
 In order for Terminal Icons to work you need to install a Nerd font
 
-- [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
-- [NerdFonts](https://www.nerdfonts.com/)
+> - [Terminal-Icons](https://github.com/devblackops/Terminal-Icons)
+> - [NerdFonts](https://www.nerdfonts.com/)
 
 ```powershell
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
@@ -414,14 +414,14 @@ Install-Module -Name PSFzf -Scope CurrentUser -Force
 ```
 
 ## Install Powertoys
-- [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/install)
+> - [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/install)
 ```
 winget install Microsoft.PowerToys --source winget
 ```
 
 ## Install Rainmeter
 
-- [Rainmeter](https://docs.rainmeter.net/manual/installing-rainmeter/)
+> - [Rainmeter](https://docs.rainmeter.net/manual/installing-rainmeter/)
 ```
 winget install Rainmeter
 ```

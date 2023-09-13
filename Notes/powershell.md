@@ -5,6 +5,7 @@
 <span style="color:#F4B8E4">
 
 ## Preview
+
 </span>
 
 ![Powershell](https://github.com/Thirstums/Notes/blob/main/Img/Powershell_Preview.png)
@@ -110,10 +111,12 @@ function which ($command) {
 <span style="color:#8CAAEE"> 
 
 ## Current oh-my-posh Theme
+
 </span>
 
 <details>
-  <summary>Open</summary>
+
+<summary>Open</summary>
 
 ```json
 {
@@ -214,7 +217,6 @@ function which ($command) {
 
 </details>
 
-
 ## Powershell 7 install 
 
 > - [Powershell 7](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
@@ -224,22 +226,21 @@ winget search Microsoft.PowerShell
 ```
 
 ## Terminal install win 10/11
+
 > - [Terminal](https://github.com/microsoft/terminal)
 
 ```powershell
 winget install --id Microsoft.WindowsTerminal -e
 ```
 
-
 ## Powershell Theme
 ### Enable Acrylic material in Terminal appearence settings:
 
 ![Acrylic Material](https://github.com/Thirstums/Notes/blob/main/Img/PowershellEnableAcrylicMaterial.png)
 
-
 Open Json file and add this theme belove the Vintage theme:
 
-```Json 
+```Json
 {
             "background": "#001B26",
             "black": "#000000",
@@ -287,11 +288,15 @@ winget install -e --id Git.Git
 ```Powershell
 scoop install neovim gcc
 ```
+
 enter Neovim
+
 ```powershell
 nvim
 ```
+
 exit Neovim
+
 ```powershell
 :qa!
 ```
@@ -300,15 +305,19 @@ exit Neovim
 ### setup New Pwsh Profile
 
 create new directory
+
 ```powershell
 mkdir .config\powershell
 ```
+
 Change Directory
+
 ```powershell
 cd .config\powershell
 ```
 
 create & edit new Pwsh Profile
+
 ```powershell
 vim .config\powershell\user_profile.ps1
 ```
@@ -316,14 +325,19 @@ vim .config\powershell\user_profile.ps1
 #### Change powershell profile location (*redirect in default profile file*)
 
 open in vim
+
 ```powershell
 nvim $PROFILE.CurrentUserCurrentHost
 ```
+
 Create Variable
+
 ```powershell
 $env:USERPROFILE\.config\powershell\user_profile.ps1
 ```
+
  to safe
+
 ```powershell
 :wqa
 ```
@@ -370,6 +384,7 @@ Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 ```
 
 Add this Import to your Powershell Profile
+
 ```Powershell
 Import-Module Terminal-Icons
 ```
@@ -379,10 +394,13 @@ Import-Module Terminal-Icons
 ```Powershell
 Install-Module -Name z -Force
 ```
+
 for example after using the ```cd .\.config\powershell``` A few times
+
 ```powershell
 z powershell
 ```
+
 will go to ```.\.config\powershell```
 
 
@@ -394,6 +412,8 @@ z learns through your ```cd``` histroy and will create shortcuts for you over ti
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
 ```
 
+I recommend adding this into your Powershell Profile
+
 ```powershell
 Set-PSReadLineOption -PredictionSource History
 ```
@@ -404,7 +424,6 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 
 ## Install PSFzf
 
-
 ```powershell
 scoop install fzf
 ```
@@ -414,15 +433,18 @@ Install-Module -Name PSFzf -Scope CurrentUser -Force
 ```
 
 ## Install Powertoys
+
 > - [PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/install)
-```
+
+```powershell
 winget install Microsoft.PowerToys --source winget
 ```
 
 ## Install Rainmeter
 
 > - [Rainmeter](https://docs.rainmeter.net/manual/installing-rainmeter/)
-```
+
+```powershell
 winget install Rainmeter
 ```
 

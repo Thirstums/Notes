@@ -8,7 +8,6 @@
 
 direkte Kosten, welche direkt (exclusiv) einem Kostenträger (Produktgruppe) zugerechnet werden könen
 
-
 - Warenkosten / Materialkosten -> EK (GK)
 - Personalkosten (lohn) -> EK (GK)
 
@@ -26,14 +25,8 @@ Deshalb spricht man von GK lohn und EK lohn
 
 #### Fertigungskosten (Lohnkosten)
 
-
 #### Gemeinkosten (inidrekte Kosten) -> GK
 
 indirekte Kosten, welche auf die Kostenträger gehöhren aber nicht direkt einem Kostenträger zugeordnet werden können. Benötigen einen "Verteilschlüssel"
 
-
-
-
-
-
-## Waren VS Material 
+## Waren VS Material

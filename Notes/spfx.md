@@ -31,13 +31,7 @@ npm install spfx-fast-serve -g
 > [FluentUI Documentation](https://react.fluentui.dev/?path=/docs/concepts-developer-quick-start--page)
 
 ```powershell
-yarn add @fluentui/react-components
-```
-
-or for node
-
-```powershell
-npm install yarn add @fluentui/react-components
+npm i @fluentui/react-components
 ```
 
 Place a ``` <FluentProvider /> ``` in the root of your app

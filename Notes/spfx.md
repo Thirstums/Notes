@@ -34,7 +34,77 @@ npm install spfx-fast-serve -g
 npm i @fluentui/react-components
 ```
 
-Place a ``` <FluentProvider /> ``` in the root of your app
+Create a `"Yourwebpartname"Provider.tsx` file and Import your fluent provider
+
+```typescript
+import * as React from 'react';
+import {
+  FluentProvider,
+  teamsDarkTheme,
+  teamsHighContrastTheme,
+  teamsLightTheme,
+  Theme,
+  tokens,
+} from '@fluentui/react-components';
+import { createv9Theme } from '../common/V8toV9ThemeShim/v9ThemeShim';
+import { IPracticeProjProps } from './IPracticeProjProps';
+import PracticeProj from './PracticeProj';
+
+export const PracticeProjProvider: React.FunctionComponent<IPracticeProjProps > = (props: React.PropsWithChildren<IPracticeProjProps >) => {
+  const { themeString , theme, hasTeamsContext  } = props;
+
+  const setTheme = React.useCallback(():Partial<Theme> => {
+      if (hasTeamsContext){
+       return  themeString === "dark"
+            ? teamsDarkTheme
+            : themeString === "contrast"
+            ? teamsHighContrastTheme
+            : {
+                ...teamsLightTheme,
+                colorNeutralBackground3: "#eeeeee",
+              }
+      } else {
+           return createv9Theme(theme)
+        }
+    
+  }, [themeString, theme, hasTeamsContext, createv9Theme]);
+
+  return (
+    <>
+      <FluentProvider
+        theme={
+          setTheme()
+        }
+        style={{ background: tokens.colorNeutralBackground3 }}
+      >
+        <PracticeProj {...props} />
+      </FluentProvider>
+
+    </>
+  );
+};
+```
+
+make sure the properties in your props are correct as well
+
+```typescript
+import { Theme } from "@fluentui/react";
+
+export interface IPracticeProjProps {
+  ProjektDef: string;
+  PreferedView: string;
+  isDarkTheme: boolean;
+  environmentMessage: string;
+  hasTeamsContext: boolean;
+  userDisplayName: string;
+  onConfigure: () => void;
+  isConfigured: boolean;
+  themeString?: string;
+  theme: Theme;
+}
+```
+
+or to make it less complicated you can also just Place a ``` <FluentProvider /> ``` in the root of your app. Although with bigger applications this is less practical
 
 ```typescript
 import React from 'react';
@@ -49,4 +119,10 @@ ReactDOM.render(
   </FluentProvider>,
   document.getElementById('root'),
 );
+```
+
+## Teams Toolkit
+
+```powershell
+npm install -g @microsoft/teamsfx-cli
 ```

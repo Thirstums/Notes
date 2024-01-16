@@ -4,7 +4,7 @@
 
 > [Shareoint Framework](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
 
-```powershell
+```ps
 yo @microsoft/sharepoint
 ```
 
@@ -14,7 +14,7 @@ yo @microsoft/sharepoint
 
 1; First time install
 
-```powershell
+```ps
 npm install spfx-fast-serve -g
 ```
 
@@ -30,13 +30,13 @@ npm install spfx-fast-serve -g
 
 > [FluentUI Documentation](https://react.fluentui.dev/?path=/docs/concepts-developer-quick-start--page)
 
-```powershell
+```ps
 npm i @fluentui/react-components
 ```
 
 Create a `"Yourwebpartname"Provider.tsx` file and Import your fluent provider
 
-```typescript
+```ts
 import * as React from 'react';
 import {
   FluentProvider,
@@ -46,7 +46,8 @@ import {
   Theme,
   tokens,
 } from '@fluentui/react-components';
-import { createv9Theme } from '../common/V8toV9ThemeShim/v9ThemeShim';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import { createV9Theme } from "@fluentui/react-migration-v8-v9"
 import { IPracticeProjProps } from './IPracticeProjProps';
 import PracticeProj from './PracticeProj';
 
@@ -64,10 +65,10 @@ export const PracticeProjProvider: React.FunctionComponent<IPracticeProjProps > 
                 colorNeutralBackground3: "#eeeeee",
               }
       } else {
-           return createv9Theme(theme)
+           return createV9Theme(theme)
         }
     
-  }, [themeString, theme, hasTeamsContext, createv9Theme]);
+  }, [themeString, theme, hasTeamsContext, createV9Theme]);
 
   return (
     <>
@@ -87,7 +88,7 @@ export const PracticeProjProvider: React.FunctionComponent<IPracticeProjProps > 
 
 make sure the properties in your props are correct as well
 
-```typescript
+```ts
 import { Theme } from "@fluentui/react";
 
 export interface IPracticeProjProps {
@@ -106,7 +107,7 @@ export interface IPracticeProjProps {
 
 or to make it less complicated you can also just Place a ``` <FluentProvider /> ``` in the root of your app. Although with bigger applications this is less practical
 
-```typescript
+```ts
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { FluentProvider, teamsLightTheme } from '@fluentui/react-components';
@@ -123,6 +124,6 @@ ReactDOM.render(
 
 ## Teams Toolkit
 
-```powershell
+```ps
 npm install -g @microsoft/teamsfx-cli
 ```

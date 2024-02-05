@@ -122,6 +122,12 @@ ReactDOM.render(
 );
 ```
 
+if the createV9Theme doesn't work
+
+```
+ npm i @fluentui/react-migration-v8-v9
+```
+
 ## Teams Toolkit
 
 ```ps

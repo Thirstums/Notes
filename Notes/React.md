@@ -1,9 +1,4 @@
----
-title: React Learning
-description: Info and useful links about the react framework
----
-
-# React Learning
+# React
 
 ## React Documentation / Tutorial
 
@@ -11,6 +6,7 @@ description: Info and useful links about the react framework
 - [create-react-app.dev](https://create-react-app.dev/docs/adding-typescript/)
 - [react-dom-components-common](https://react.dev/reference/react-dom/components/common)
 - [react-lernen](https://github.com/manuelbieh/react-lernen)
+- [React Roadmap](https://roadmap.sh/react)
 
 ## Typescript
 
@@ -72,8 +68,8 @@ npx create-react-app quickstart --template typescript
 - In React, you control branching logic with JavaScript.
 - You can return a JSX expression conditionally with an if statement.
 - You can conditionally save some JSX to a variable and then include it inside other JSX by using the curly braces.
-- In JSX, {cond ? <A /> : <B />} means “if cond, render <A />, otherwise <B />”.
-- In JSX, {cond && <A />} means “if cond, render <A />, otherwise nothing”.
+- In JSX, {cond ?   } means “if cond, render , otherwise ”.
+- In JSX, {cond &&} means “if cond, render , otherwise nothing”.
 
 ### passing-props-to-a-component
 
@@ -90,7 +86,7 @@ npx create-react-app quickstart --template typescript
 - [what-are-react-pure-functional-components](https://blog.logrocket.com/what-are-react-pure-functional-components/)
 - [react-function-component](https://www.robinwieruch.de/react-function-component/)
 
-More Infos 
+More Infos
 
 - [react-conditional-rendering](https://refine.dev/blog/react-conditional-rendering/#introduction)
 - [the-ultimate-guide-to-conditional-rendering-in-react](https://blog.bitsrc.io/the-ultimate-guide-to-conditional-rendering-in-react-1-3f3a436c0374)
@@ -109,3 +105,13 @@ More Infos
 - [React Typescript Video Tutorial](https://www.youtube.com/watch?v=Z5iWr6Srsj8)
 - [Fullstack React GraphQL TypeScript Video Tutorial](https://www.youtube.com/watch?v=I6ypD7qv3Z8https://www.youtube.com/watch?v=I6ypD7qv3Z8)
 
+## React State Management
+
+### Rules fo Hooks
+
+Only call Hooks at the Top Level of your Component, before any early returns. Don't call Hooks inside loops, condition or nested functions. Like that you can ensure that Hooks are called in the same order each component renders
+
+- Call Hoooks from React funciton components
+- Call Hooks from Custom Hooks
+
+When you follow this rule, you ensure that statefull logic in a component is visible to the source code

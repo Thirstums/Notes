@@ -127,3 +127,31 @@ ReactDOM.render(
 ```ps
 npm install -g @microsoft/teamsfx-cli
 ```
+
+## Placeholder control
+
+> [PnPPlaceholdercontroll link](https://pnp.github.io/sp-dev-fx-controls-react/controls/Placeholder/)
+
+## Reactive Property pane
+
+> [Waldek Mastykarz - Reactive Property Panes](https://blog.mastykarz.nl/sharepoint-framework-client-side-web-parts-non-reactive-property-pane/)
+
+## cashing
+
+> - [PnP JS Library cashing](https://pnp.github.io/pnpjs/v1/odata/docs/caching/#pnpodatacaching)
+> - [SpKnowledge cashing](https://spknowledge.com/2020/07/01/spfx-using-pnp-caching/)
+
+## Tools
+
+### Microsoft Graph
+
+> - [Graph](https://learn.microsoft.com/en-us/graph/overview)
+> - [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+
+### pnp.sp
+
+> - [pnpjs](https://pnp.github.io/pnpjs/)
+
+## Dev Tenant
+
+> - [DevTenant](https://developer.microsoft.com/en-us/microsoft-365/profile)

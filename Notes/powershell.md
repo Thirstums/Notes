@@ -350,8 +350,14 @@ $env:USERPROFILE\.config\powershell\user_profile.ps1
 Install-Module posh-git -Scope CurrentUser -Force
 ```
 
+Scoop Installation
 ```powershell
 scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
+```
+
+Update OhMyPosh via Scoop
+```powershell
+scoop update oh-my-posh
 ```
 
 Preview template themes
